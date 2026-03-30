@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos &mdash; JinLab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      color: #073763;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    a { color: #073763; }
+
+    nav { margin-bottom: 28px; }
+    nav a { margin-right: 16px; font-weight: bold; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+
+    h1 { font-size: 1.3em; margin: 0 0 20px 0; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .gallery figure {
+      margin: 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .gallery figcaption {
+      font-size: 0.9em;
+      margin-top: 6px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .gallery { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="people.html">People</a>
+    <a href="project.html">Project</a>
+    <a href="publication.html">Publication</a>
+    <a href="photo.html">Photo</a>
+  </nav>
+
+  <h1>Group Photos</h1>
+
+  <div class="gallery">
+    <figure>
+      <img src="research_group_photo/2026.jpg" alt="Group photo 2026">
+      <figcaption>2026</figcaption>
+    </figure>
+    <figure>
+      <img src="research_group_photo/2025_Thanksgiving.jpg" alt="Thanksgiving 2025">
+      <figcaption>2025 &mdash; Thanksgiving</figcaption>
+    </figure>
+    <figure>
+      <img src="research_group_photo/2025_DMC_Grace_Max_Kevin.jpg" alt="IEEE DMC 2025">
+      <figcaption>2025 &mdash; IEEE DMC</figcaption>
+    </figure>
+    <figure>
+      <img src="research_group_photo/2025 honors college.jpg" alt="Honors College 2025">
+      <figcaption>2025 &mdash; Honors College</figcaption>
+    </figure>
+    <figure>
+      <img src="research_group_photo/2024_greentech_Jack_Eva.jpeg" alt="IEEE GreenTech 2024">
+      <figcaption>2024 &mdash; IEEE GreenTech</figcaption>
+    </figure>
+    <figure>
+      <img src="research_group_photo/2024.jpg" alt="Group photo 2024">
+      <figcaption>2024</figcaption>
+    </figure>
+    <figure>
+      <img src="research_group_photo/2023.png" alt="Group photo 2023">
+      <figcaption>2023</figcaption>
+    </figure>
+    <figure>
+      <img src="research_group_photo/2018.JPG" alt="Group photo 2018">
+      <figcaption>2018</figcaption>
+    </figure>
+  </div>
+
+</body>
+</html>
