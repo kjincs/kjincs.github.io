@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kjincs.github.io/sitemap.xml
