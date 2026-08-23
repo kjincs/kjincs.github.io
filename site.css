@@ -1,20 +1,136 @@
+html body {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+body h1,
+body h2 {
+  color: #073763;
+}
+
+body h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+
+body .header-info h1 {
+  font-size: 1.8rem;
+}
+
+body h2 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+body hr {
+  border-top-color: #d5dde5;
+}
+
+body .header {
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+body .header > img {
+  width: 180px;
+  border-radius: 4px;
+}
+
+.header-info .role {
+  margin: 2px 0 8px;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.header-info .department,
+.header-info .institution {
+  color: #284f70;
+}
+
+.header-info .location {
+  margin-top: 8px;
+}
+
+.header-info .contact {
+  margin-top: 10px;
+}
+
+body.people-page h2 {
+  margin-top: 36px;
+}
+
+.people-page h2 + hr + ul {
+  margin-bottom: 20px;
+}
+
+.people-group-label {
+  margin: 26px 0 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e4e9ee;
+  color: #284f70;
+}
+
+.people-group-label + ul {
+  margin-bottom: 20px;
+}
+
+body.publication-page h2 {
+  margin-top: 38px;
+  font-size: 1.35rem;
+}
+
+.publication-page ol {
+  padding-left: 2.2rem;
+}
+
+.publication-page ol > li {
+  margin-bottom: 14px;
+  padding-left: 6px;
+}
+
+.publication-page .links {
+  white-space: nowrap;
+}
+
+.openings-page .opportunity-card {
+  margin: 24px 0;
+  padding: 22px 26px;
+  border: 1px solid #d5dde5;
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+
+.openings-page .opportunity-card h2:first-child {
+  margin-top: 0;
+}
+
+.openings-page .opportunity-card > :last-child {
+  margin-bottom: 0;
+}
+
 .site-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 18px;
   margin-bottom: 28px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #073763;
+  border-bottom: 1px solid #d5dde5;
 }
 
 .site-nav a {
   margin: 0;
+  padding: 3px 0;
   font-weight: bold;
   text-decoration: none;
 }
 
 .site-nav a:hover {
   text-decoration: underline;
+}
+
+.site-nav a[aria-current="page"] {
+  color: #c8102e;
+  border-bottom: 2px solid #c8102e;
 }
 
 a:focus-visible {
@@ -26,11 +142,61 @@ a:focus-visible {
 .site-footer {
   margin-top: 48px;
   padding-top: 14px;
-  border-top: 1px solid #073763;
+  border-top: 1px solid #d5dde5;
   color: #555;
   font-size: 0.9em;
 }
 
 .site-footer p {
   margin: 0;
+}
+
+@media (max-width: 650px) {
+  html body {
+    margin: 22px auto;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  body .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  body .header > img {
+    width: 160px;
+  }
+
+  body .header-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  body h1,
+  body .header-info h1 {
+    font-size: 1.6rem;
+  }
+
+  body h2 {
+    font-size: 1.2rem;
+  }
+
+  .site-nav {
+    gap: 6px 14px;
+    margin-bottom: 22px;
+    font-size: 0.95rem;
+  }
+
+  .openings-page .opportunity-card {
+    padding: 18px;
+  }
+
+  .publication-page ol {
+    padding-left: 1.6rem;
+  }
+
+  a {
+    overflow-wrap: anywhere;
+  }
 }
